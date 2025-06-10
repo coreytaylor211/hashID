@@ -825,7 +825,7 @@ def main():
         try:
             outfile = io.open(args.outfile, "w", encoding="utf-8")
         except EnvironmentError:
-            parser.error("Could not open {0}".format(args.output))
+            parser.error("Could not open {0}".format(args.outfile))
 
     if not args.strings or args.strings[0] == "-":
         while True:
